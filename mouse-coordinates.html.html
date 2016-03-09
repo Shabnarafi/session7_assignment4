@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<style>
+input{
+
+	background-color: white;
+
+}
+</style>
+</head>
+<body onmouseover="myFunction(event)">
+<textarea rows="10" cols="500" id="demo1"></textarea>
+<script>
+function myFunction(event){
+
+	var X = event.clientX;
+	var y = event.clientY;
+	var d = new Date();
+	document.getElementById("demo1").innerHTML = "X:" + X + "; Y:" + y + ";" + d;
+
+}
+
+</script>
+</body>
+</html>
